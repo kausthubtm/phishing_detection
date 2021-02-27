@@ -4,3 +4,5 @@ matplotlib
 pandas
 sklearn
 pickle
+bs4
+requests

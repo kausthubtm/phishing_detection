@@ -1,0 +1,106 @@
+body {
+	background-repeat: no-repeat;
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 1100% 1100%;
+	animation: gradient 15s ease infinite;
+}
+
+
+.content
+{
+   
+  width: 50%;
+  margin: 250px auto;
+  text-align: center;  
+}
+
+h1
+{
+	font-family: 'Reggae One', cursive;
+	font-size: 3rem;
+	margin: 1.5%;
+}
+
+h2
+{
+	font-family: 'Londrina Solid', cursive;
+	margin: 1.5%;
+}
+
+input
+{
+	display: block;
+}
+
+.url
+{
+	width: 60%;
+	margin: 2% auto;
+	padding: 1%;
+	border-style: none none solid none;
+    background: transparent;
+    color: white;
+    border-color: white;
+}
+
+::placeholder
+{
+	color: white;
+	font-family: 'Architects Daughter', cursive;
+}
+
+.btn
+{
+	margin: 1% auto;
+}
+
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+
+
+
+@media  screen and (max-width: 1000px) and (min-width : 400px)
+{
+
+.content
+{
+  width: 80%; 
+} 
+
+h1
+{
+	font-size: 2rem;
+	margin: 1.5%;
+}
+
+h2
+{
+	margin: 1.5%;
+}
+
+input
+{
+	display: block;
+}
+
+.url
+{
+	width: 70%;
+}
+
+
+
+
+}
