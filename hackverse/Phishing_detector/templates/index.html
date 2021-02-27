@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="en">
 
 <head>
@@ -11,7 +12,8 @@
   <link rel="stylesheet" href="../static/css/index.css">
   <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
   <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Londrina+Solid:wght@300&family=Reggae+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Londrina+Solid:wght@300&family=Reggae+One&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js" integrity="sha256-qM7QTJSlvtPSxVRjVWNM2OfTAz/3k5ovHOKmKXuYMO4=" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -27,24 +29,21 @@
 </div>
 
 <div class="input">
-  <form name="form" action="index.html" method="post">
-      <input class="url" type="text" name="url" value="" placeholder="input url here.." required>
-      <input class="btn" type="submit" name="Check" value="Check">
-    </form>
+  <form method="POST" action="{% url 'Phishing_detector:classify_URL' %}">
+    {% csrf_token %}
+    <input class="url" type="text" name="url" id="url" value="" placeholder="input url here.." required>
+    <input class="btn" type="submit" name="Check" value="Check">
+  </form>
 </div>
 
-<div class="output">
-  
-</div>
+{% if flag %}
+  <div >
+    <h1>{{ans}} </h1>
+  </div>
+{% endif %}
 
 </div>
 
-
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js" integrity="sha256-qM7QTJSlvtPSxVRjVWNM2OfTAz/3k5ovHOKmKXuYMO4=" crossorigin="anonymous"></script>
-
-
-  <script src="index.js" charset="utf-8"></script>
 </body>
 
 </html>

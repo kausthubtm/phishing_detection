@@ -6,3 +6,4 @@ sklearn
 pickle
 bs4
 requests
+whois
