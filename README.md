@@ -13,7 +13,8 @@ Aim: This project is aimed to predict whether a URL is legitimate or malicious.
  - Backend : Python
 
 ### Libraries and dependencies
-Please refer to [requirements.txt](https://github.com/kausthubtm/phishing_detection/blob/main/requirments.txt)
+We have mainly used python libraries and dependencies like Pandas, Numpy, Sklearn, Pickle, requests, whois, matplotlib, bs4, ipaddress etc... 
+Also please refer to [requirements.txt](https://github.com/kausthubtm/phishing_detection/blob/main/requirments.txt)
 
 ### Installation
 
@@ -23,7 +24,7 @@ Pre-requisites
 
 Navigate to the hackverse folder and run the following commands
 
-#### `$ python manage.py makemigrations`
-#### `$ python manage.py migrate`
-#### `$ python manage.py runserver`
+- `$ python manage.py makemigrations`
+- `$ python manage.py migrate`
+- `$ python manage.py runserver`
 
