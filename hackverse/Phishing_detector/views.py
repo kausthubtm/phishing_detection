@@ -1,5 +1,4 @@
 from django.shortcuts import render
-from .feature_extraction import featureExtraction
 from .predict import predict
 from .getFeatures import generate_data_set
 
