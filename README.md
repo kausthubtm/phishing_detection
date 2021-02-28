@@ -28,3 +28,5 @@ Navigate to the hackverse folder and run the following commands
 - `$ python manage.py migrate`
 - `$ python manage.py runserver`
 
+## Video & screenshots
+You can view the video of the project [here](https://www.youtube.com/watch?v=-MwgOke079Q&feature=youtu.be) and screenshots [here](https://github.com/kausthubtm/phishing_detection/tree/main/Screenshots)
