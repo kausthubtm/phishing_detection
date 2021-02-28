@@ -7,3 +7,4 @@ pickle
 bs4
 requests
 whois
+googlesearch-python

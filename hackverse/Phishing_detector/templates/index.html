@@ -23,10 +23,22 @@
   
   <div class="text">
   
-<h1 class="text-light">Feared of getting Phished?</h1>
+<h1 class="text-light">Scared of getting Phished?</h1>
 <h2 class="text-light">Try us!!</h2>
 
 </div>
+
+
+{% if flag %}
+  <div >
+    {% if ans == 1 %}
+      <h1>Legitimate URL </h1>
+    {% else %}
+      <h1>WARNING : Phishing URL</h1>
+    {% endif %}
+  </div>
+
+{% else %} 
 
 <div class="input">
   <form method="POST" action="{% url 'Phishing_detector:classify_URL' %}">
@@ -36,10 +48,6 @@
   </form>
 </div>
 
-{% if flag %}
-  <div >
-    <h1>{{ans}} </h1>
-  </div>
 {% endif %}
 
 </div>

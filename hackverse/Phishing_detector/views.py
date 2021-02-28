@@ -16,4 +16,4 @@ def classify_URL(request):
     print(features)
     ans = predict(features)
 
-    return render(request, 'index.html', {'ans': ans, 'flag': 1})
+    return render(request, 'index.html', {'ans': ans, 'flag': 1, 'url' : url})
