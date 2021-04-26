@@ -414,7 +414,7 @@ def generate_data_set(url):
             data_set[i] = 1
     except:
         data_set[i] = 1
-
+        
     #28. Google_Index
     i = 27
     site=search(url, 5)
